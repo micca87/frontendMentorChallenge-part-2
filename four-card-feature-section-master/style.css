@@ -67,7 +67,7 @@
     padding:16px;
     background-color: #fff;
     margin:14px 19px;
-    box-shadow: 1px 2px 14px -5px var(--Grayish-Blue);
+    box-shadow: 1px 2px 40px -15px var(--Grayish-Blue);
 }
 .card__heading {
     font-weight: 600;
@@ -120,7 +120,6 @@
     background-image: url('./images/icon-calculator.svg');
 }
 
-/* width-min:375px */
 @media (min-width:375px) {
     .card__container{
         display:flex;
@@ -129,7 +128,7 @@
         padding:26px;
     }
     .card{
-        height: 219px;
+        height: 223px;
         width:314px;
         border-top: 3px solid;
     }
@@ -171,6 +170,27 @@
         width:1400px;
     }
     .card__container{
+        margin-top:-15px;
+    }
+
+    .container__heading,
+    .container__subheading{
+        width:450px;
+        text-align: center;
+    }
+    .container__heading,
+    .container__subheading {
+        font-size: 33px;
+    }
+    .container__heading{
+        margin-top:20px;
+    }
+    .container__text{
+        font-size: 14px;
+        width:479px;
+    }
+
+    .card__container{
         flex-wrap: wrap;
     }
     .card{
@@ -179,7 +199,7 @@
     }
     .card--one{
         position: relative;
-        top:119px;;
+        top:125px;;
     }
     .card--three{
         order:4;
@@ -187,7 +207,7 @@
     .card--four{
         order:3;
         position: relative;
-        top:119px;
+        top:125px;
     }
 
 }
