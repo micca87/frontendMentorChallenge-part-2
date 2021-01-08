@@ -5,43 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Four card feature section</title>
 
 </head>
 <body>
-<div>
-  <div>
-    <h1>Reliable, efficient delivery</h1>
-    <h2>Powered by Technology</h2>
+<div class="container">
+  <div class="container__box">
+    <h1 class="container__heading">Reliable, efficient delivery</h1>
+    <h2 class="container__subheading">Powered by Technology</h2>
 
-    <p>Our Artificial Intelligence powered tools use millions of project data points
+    <p class="container__text">Our Artificial Intelligence powered tools use millions of project data points
        to ensure that your project is successful</p>
 
-    <div>
-      <h3>Supervisor</h3>
-      <p>Monitors activity to identify project roadblocks</p>
-      <span></span>
-    </div>
 
-    <div>
-      <h3>Team Builder</h3>
-      <p>Scans our talent network to create the optimal team for your project</p>
-      <span></span>
-    </div>
+    <div class="card__container">
 
-    <div>
-      <h3>Karma</h3>
-      <p>Regularly evaluates our talent to ensure quality</p>
-      <span></span>
-    </div>
+        <div class="card card--one">
+          <h3 class="card__header ">Supervisor</h3>
+          <p class="card__text">Monitors activity to identify project roadblocks</p>
+          <span class="card__icon"></span>
+        </div>
 
-    <div>
-      <h3>Calculator</h3>
-      <p>Uses data from past projects to provide better delivery estimates</p>
-      <span></span>
-    </div>
+        <div class="card card--two" class="card__text">
+          <h3 class="card__header">Team Builder</h3>
+          <p class="card__text">Scans our talent network to create the optimal team for your project</p>
+          <span class="card__icon"></span>
+        </div>
 
+        <div class="card card--three">
+          <h3 class="card__header">Karma</h3>
+          <p class="card__text">Regularly evaluates our talent to ensure quality</p>
+          <span class="card__icon"></span>
+        </div>
+
+        <div class="card card-four">
+          <h3 class="card__header">Calculator</h3>
+          <p class="card__text">Uses data from past projects to provide better delivery estimates</p>
+          <span class="card__icon"></span>
+        </div>
+
+    </div>
   </div>
 </div>
 
