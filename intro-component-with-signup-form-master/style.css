@@ -1,0 +1,38 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+/* CENTERING CONTAINER */
+.background {
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    background-image: url('./images/bg-intro-mobile.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.container__left-column, .container__right-column {
+    width:270px;
+}
