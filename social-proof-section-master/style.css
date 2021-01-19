@@ -9,3 +9,60 @@
         sans-serif;
     font-size: 15px;
 }
+
+/* CARDS */
+.card {
+    height: 248px;
+    width: 327px;
+    margin: 16px;
+    background-color: var(--very-dark-magenta);
+    border-radius: 5px;
+}
+
+.card__photo {
+    display: inline-block;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+}
+
+.card__photo--top {
+    background: url('./images/image-colton.jpg') center/cover;
+}
+
+.card__photo--middle {
+    background: url('./images/image-irene.jpg') center/cover;
+}
+
+.card__photo--bottom {
+    background: url('./images/image-anne.jpg') center/cover;
+}
+
+.card__photo--top,
+.card__photo--middle,
+.card__photo--bottom {
+    margin:40px 20px -8px 32px;
+}
+
+.card__name, .card__status {
+    display: block;
+}
+.card__name {
+    font-weight: 700;
+    font-size: 13px;
+    color:white;
+    margin-bottom: 5px;
+}
+
+.card__status {
+    font-size: 13px;
+    color: var(--soft-pink);
+}
+
+.card__testimonials {
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: white;
+    margin: 32px;
+}
