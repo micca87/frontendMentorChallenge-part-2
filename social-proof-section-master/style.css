@@ -10,6 +10,31 @@
     font-size: 15px;
 }
 
+.rating {
+    height: 78px;
+    width: 327px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-magenta);
+    margin:16px;
+    border-radius: 10px;
+}
+
+.rating-star {
+    height: 16px;
+    width: 85px;
+    display: inline-block;
+    background-image: url('./images/icon-star.svg');
+}
+
+.rating-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+}
+
 /* CARDS */
 .card {
     height: 248px;
