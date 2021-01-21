@@ -1,0 +1,225 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    font-family: 'Spartan',
+        sans-serif;
+    font-size: 15px;
+}
+body {
+    margin:0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./images/bg-pattern-top-mobile.svg') top left / 374px 232px no-repeat,
+        url('./images/bg-pattern-bottom-mobile.svg') bottom right / 375px 503px no-repeat;
+}
+
+.section--top {
+    margin-top:67px;
+}
+
+/* RATING SECTION */
+.header {
+    width: 327px;
+    margin: 16px;
+    font-size: 31px;
+    text-align: center;
+    line-height: 1;
+    color: var(--very-dark-magenta);
+}
+.section--top__text {
+    font-size: 14.5px;
+    color: var(--very-dark-magenta);
+    text-align: center;
+    line-height: 1.8;
+    width:327px;
+    margin:24px 16px 40px;
+}
+
+.rating {
+    height: 78px;
+    width: 327px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-magenta);
+    margin:16px;
+    border-radius: 10px;
+}
+
+.rating-star {
+    height: 16px;
+    width: 85px;
+    display: inline-block;
+    background-image: url('./images/icon-star.svg');
+}
+
+.rating-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+}
+
+.section--bottom {
+    margin-top:17px;
+}
+/* CARDS */
+.card {
+    height: 248px;
+    width: 327px;
+    margin: 16px;
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+}
+
+.card__photo {
+    display: inline-block;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+}
+
+.card__photo--top {
+    background: url('./images/image-colton.jpg') center/cover;
+}
+
+.card__photo--middle {
+    background: url('./images/image-irene.jpg') center/cover;
+}
+
+.card__photo--bottom {
+    background: url('./images/image-anne.jpg') center/cover;
+}
+
+.card__photo--top,
+.card__photo--middle,
+.card__photo--bottom {
+    margin:40px 20px -8px 32px;
+}
+
+.card__name, .card__status {
+    display: block;
+}
+.card__name {
+    font-weight: 700;
+    font-size: 13px;
+    color:white;
+    margin-bottom: 5px;
+}
+
+.card__status {
+    font-size: 13px;
+    color: var(--soft-pink);
+}
+
+.card__testimonials {
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 1.8;
+    color: white;
+    margin: 32px;
+}
+
+@media (min-width: 700px) {
+
+
+    .container {
+        background: url('./images/bg-pattern-top-desktop.svg') top left / 584px 362px no-repeat,
+            url('./images/bg-pattern-bottom-desktop.svg') bottom right / 1085px 673px no-repeat;
+    }
+
+    .section--top {
+        height:auto;
+        width: 1146px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 129px;
+    }
+
+    .section--top__text {
+        width: 450px;
+        text-align: initial;
+    }
+
+    .header {
+        width: 450px;
+        font-size: 48px;
+        text-align: initial;
+        margin-top: 0;
+    }
+
+    .rating-wrapper {
+        width: 577px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating {
+        width: 445px;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .rating-middle {
+        align-self: center;
+    }
+
+    .rating-bottom {
+        align-self: end;
+    }
+
+    .rating-star {
+        margin-right:32px;
+    }
+
+    .rating-star__wrapper {
+        margin-left: -50px;
+    }
+
+    .section--bottom {
+        /* height: 298px; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top:0;
+    }
+
+    .card {
+        height: 234px;
+        width: 350px;
+    }
+
+    .card--top {
+        align-self: start;
+    }
+
+    .card--middle {
+        align-self: center;
+    }
+    .card--bottom {
+        align-self: end;
+    }
+}
+
+@media (max-width:1150px) {
+    .section--top {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
